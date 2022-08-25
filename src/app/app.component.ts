@@ -33,9 +33,9 @@ export class AppComponent {
 
   generate() {
     this.userName =
-      this.form.value.firstname +
+      this.form.value.firstname.toLowerCase() +
       '_' +
-      this.form.value.lastname +
+      this.form.value.lastname.toLowerCase() +
       '_' +
       (Math.floor(Math.random() * 9) + 1);
   }
